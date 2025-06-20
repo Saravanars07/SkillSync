@@ -11,12 +11,12 @@
   <h1 class="mb-4">Welcome to SkillSync 🚀</h1>
 
     {% if session.get('logged_in') and session.get('user_type')=='student' %}
-      <a href="/startup/post" class="btn btn-success">Post a Project</a>
+      <a href="/startup/post" class="btn btn-outline-success">Post a Project</a>
       {% if session.get('logged_in') %}
-        <a href="/logout" class="btn btn-outline-danger mt-3">Logout</a>
+        <a href="/logout" class="btn btn-outline-danger">Logout</a>
       {% endif %}
     {% else %}
-      <a href="/student/login" class="btn btn-primary">Student Login</a>
+      <a href="/student/login" class="btn btn-outline-primary">Student Login</a>
     {% endif %}
   </div>
   
